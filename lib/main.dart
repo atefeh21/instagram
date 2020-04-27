@@ -123,13 +123,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 100,
                 child: DrawerHeader(
                   child: Text(
-                    'Username',
+                    'Username                             ',
                     style: TextStyle(fontSize: 20, fontFamily: 'NotoSansKR'),
                   ),
                 ),
               ),
+              // Divider(),
               Expanded(
-                // ListView contains a group of widgets that scroll inside the drawer
                 child: ListView(
                   children: <Widget>[
                     ListTile(

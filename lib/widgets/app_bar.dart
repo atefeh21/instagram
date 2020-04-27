@@ -51,7 +51,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       centerTitle: true,
     ),
     AppBar(
-      title: Text('profile'),
+      title: Text('username'),
     )
   ];
   @override
