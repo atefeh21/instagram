@@ -39,7 +39,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       ],
     ),
     AppBar(
-      title: Text('search'),
+      title: Text('summery'),
       centerTitle: true,
     ),
     AppBar(
@@ -47,11 +47,23 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       centerTitle: true,
     ),
     AppBar(
-      title: Text('summery'),
-      centerTitle: true,
+      title: Text(
+        'Activity',
+        style: TextStyle(
+          fontFamily: 'NotoSansKR',
+        ),
+      ),
+      actions: <Widget>[
+        Text(''),
+      ],
     ),
     AppBar(
-      title: Text('username'),
+      title: Text(
+        'Username',
+        style: TextStyle(
+          fontFamily: 'NotoSansKR',
+        ),
+      ),
     )
   ];
   @override
