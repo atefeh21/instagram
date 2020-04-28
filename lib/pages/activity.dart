@@ -170,6 +170,30 @@ class _ActivityPageState extends State<ActivityPage> {
                 ),
               ),
             ),
+            Card(
+              elevation: 0,
+              child: Padding(
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 0, vertical: 10.0),
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundImage: AssetImage('assets/user2.png'),
+                    radius: 30.0,
+                  ),
+                  title: Text(
+                    'Follow Alex Mix and others you know to see their photos',
+                    style: titleFontStyle,
+                  ),
+                  subtitle: Text(
+                    '29d',
+                    style: TextStyle(
+                      fontSize: 13.0,
+                      color: Colors.grey[500],
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

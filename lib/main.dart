@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:instagram/pages/activity.dart';
 import 'package:instagram/pages/home.dart';
 import 'package:instagram/pages/profile_page.dart';
+import 'package:instagram/pages/search.dart';
 import 'package:instagram/widgets/app_bar.dart';
+import 'package:instagram/widgets/new_post.dart';
 import 'package:instagram/widgets/side_drawer.dart';
+import 'package:line_icons/line_icons.dart';
 import './style/text_style.dart';
 
 void main() => runApp(MyApp());
@@ -32,14 +35,8 @@ class _MyHomePageState extends State<MyHomePage> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   List<Widget> _widgetOptions = <Widget>[
     HomePage(),
-    Text(
-      'Index 1: Search',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Add',
-      style: optionStyle,
-    ),
+    SearchPage(),
+    NewPost(),
     ActivityPage(),
     ProfilePage(),
   ];
@@ -75,35 +72,35 @@ class _MyHomePageState extends State<MyHomePage> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.home,
+              LineIcons.home,
               size: 30,
             ),
             title: Text('Home'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.search,
+              LineIcons.search,
               size: 30,
             ),
             title: Text('Search'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.add_box,
-              size: 30,
+              LineIcons.plus_square_o,
+              size: 33,
             ),
             title: Text('Add'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.favorite,
+              LineIcons.heart_o,
               size: 30,
             ),
             title: Text('Heart'),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.person,
+              LineIcons.user,
               size: 30,
             ),
             title: Text('Profile'),
@@ -114,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
         unselectedItemColor: Colors.black,
         onTap: _onItemTapped,
       ),
-      endDrawer: SideDrawer(),
+      endDrawer: _selectedIndex == 4 ? SideDrawer() : null,
     );
   }
 }

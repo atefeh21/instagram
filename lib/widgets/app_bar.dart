@@ -39,12 +39,10 @@ class _AppBarWidgetState extends State<AppBarWidget> {
       ],
     ),
     AppBar(
-      title: Text('summery'),
-      centerTitle: true,
+      title: Text('Search'),
     ),
     AppBar(
-      title: Text('upload'),
-      centerTitle: true,
+      title: Text('Upload'),
     ),
     AppBar(
       title: Text(
