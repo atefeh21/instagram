@@ -1,7 +1,7 @@
 # instagram
 
-Create the UI the exact same as Instagram with Flutter
-Free downlo Instagram with flutter
+Create the UI the exact same as Instagram with Flutter, 
+Free download Instagram created by flutter
 
 ## Getting Started
 
