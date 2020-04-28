@@ -1,6 +1,7 @@
 # instagram
 
-A new Flutter project.
+Create the UI the exact same as Instagram with Flutter
+Free downlo Instagram with flutter
 
 ## Getting Started
 
