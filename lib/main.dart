@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/pages/activity.dart';
+import 'package:instagram/pages/auth/login.dart';
 import 'package:instagram/pages/home.dart';
 import 'package:instagram/pages/profile_page.dart';
 import 'package:instagram/pages/search.dart';
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyHomePage(),
+      home: Login(),
     );
   }
 }
