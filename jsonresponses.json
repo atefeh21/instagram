@@ -1,0 +1,20 @@
+{
+    "title": "عملیات موفق",
+    "msg": "pick the token from content field",
+    "content": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hcGkvdjEvbG9naW4iLCJpYXQiOjE1ODgyMTU0NDEsImV4cCI6MTU4ODIxOTA0MSwibmJmIjoxNTg4MjE1NDQxLCJqdGkiOiJ6RVc3WnFkSUQ3VWpUN1VLIn0.CnDrCnJEfgLVg14Ab48LOLbUNWyhRi7Mxi4QKGM6Lco",
+    "user": {
+      "id": 1,
+      "username": "username",
+      "name": "Mertie Hills",
+      "email": "kristoffer.klocko@example.net",
+      "website": "https:\/\/www.sawayn.com\/nisi-sed-dolores-quos-occaecati-cum",
+      "bio": "Est quidem molestiae ducimus cumque. Velit quia consequatur id. Ratione consequatur et reprehenderit repellat nemo perspiciatis. Officia voluptatibus sint quaerat in.",
+      "profile_photo": "public\/image\/user\/user16.png",
+      "active": 1,
+      "created_at": null,
+      "updated_at": null
+    },
+    "status": "success",
+    "code": 200,
+    "http_code": 200
+  }
