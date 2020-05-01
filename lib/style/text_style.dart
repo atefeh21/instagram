@@ -22,14 +22,5 @@ class GlobalTextStyle {
       fontFamily: 'NotoSansKR',
     ),
     border: InputBorder.none,
-    // enabledBorder: OutlineInputBorder(
-    //   borderRadius: BorderRadius.all(
-    //     Radius.circular(4.0),
-    //   ),
-    //   borderSide: BorderSide(
-    //     color: Colors.white24,
-    //     width: 0,
-    //   ),
-    // ),
   );
 }

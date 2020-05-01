@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:instagram/global/global_variable.dart';
+import 'package:instagram/style/text_style.dart';
+import 'package:line_icons/line_icons.dart';
 
 class AppBarWidget extends StatefulWidget {
   final int selectedAppBar;
@@ -39,9 +42,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
         ),
       ],
     ),
-    AppBar(
-      title: Text('Search'),
-    ),
+    AppBar(leading: Icon(LineIcons.search), title: Text('Search')),
     AppBar(
       title: Text('Upload'),
     ),
