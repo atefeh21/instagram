@@ -43,6 +43,8 @@ mixin _$AuthService on _AuthService, Store {
     }, _$logedInUserAtom, name: '${_$logedInUserAtom.name}_set');
   }
 
+  final _$logoutAsyncAction = AsyncAction('logout');
+
   final _$loginAsyncAction = AsyncAction('login');
 
   @override

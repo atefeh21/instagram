@@ -22,22 +22,35 @@ abstract class _AuthService with Store {
   User logedInUser;
 
   @action
+  void logout() async {
+    token = null;
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    prefs.setInt('userId', 0);
+  }
+
+  @action
   Future<LoginResponse> login(username, password) async {
     try {
       var response = await http.post(
-        GlobalVariable.url + '/api/v1/login',
+        'http://kashune.com/mainweb/api/v1/login',
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },
-        body: jsonEncode(
-            <String, dynamic>{'username': username, 'password': password}),
+        body: jsonEncode(<String, dynamic>{
+          'username': username,
+          'password': password,
+          'key': GlobalVariable.apiKey
+        }),
       );
+
       Map loginResponseMap = json.decode(response.body);
+
       LoginResponse theResponse = LoginResponse.fromJson(loginResponseMap);
-      print('login TOKEEEEEN ${theResponse.token}');
+      // print('login TOKEEEEEN ${theResponse.token}');
       if (theResponse.status == 'success') {
         token = theResponse.token;
         logedInUser = theResponse.user;
+
         SharedPreferences prefs = await SharedPreferences.getInstance();
         prefs.setInt('userId', logedInUser.id);
       } else

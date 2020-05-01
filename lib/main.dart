@@ -9,6 +9,8 @@ import 'package:instagram/widgets/new_post.dart';
 import 'package:instagram/widgets/side_drawer.dart';
 import 'package:line_icons/line_icons.dart';
 import './style/text_style.dart';
+import 'global/global_variable.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 
 void main() => runApp(MyApp());
 
@@ -17,9 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Login(),
-    );
+        debugShowCheckedModeBanner: false,
+        home: Observer(
+          builder: (_) =>
+              authServiceInstance.token == null ? Login() : MyHomePage(),
+        ));
   }
 }
 

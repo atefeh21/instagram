@@ -28,18 +28,16 @@ class _LoginState extends State<Login> {
           ),
           padding: EdgeInsets.fromLTRB(15, 13, 15, 15),
           onPressed: () async {
-            // setState(() => _isLoading = true);
+            setState(() => _isLoading = true);
             var result = await authServiceInstance.login(username, password);
-            if (result.status == 'success') {
+            if (result.code == 200) {
               setState(() => _isLoading = false);
               Navigator.pop(context);
               print('logged in!');
-              // SnackBarWidget()
-              //     .snackBar('Success!', 'You are logged in', Colors.green[700]);
             } else {
               setState(() {
                 _isLoading = false;
-                loginMessage = 'Login Failed';
+                loginMessage = result.msg;
               });
             }
           },
@@ -77,6 +75,12 @@ class _LoginState extends State<Login> {
                             children: [
                               InstagramLogo(),
                               SizedBox(height: 50.0),
+                              Text(
+                                loginMessage,
+                                style: TextStyle(
+                                    fontSize: 15.0, color: Colors.white),
+                              ),
+                              SizedBox(height: 10.0),
                               Form(
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.start,
@@ -124,11 +128,6 @@ class _LoginState extends State<Login> {
                               SizedBox(height: 12.0),
                               OrDivider(),
                               LoginWithFacebook(),
-                              Text(
-                                loginMessage,
-                                style: TextStyle(
-                                    fontSize: 20.0, color: Colors.white),
-                              ),
                             ],
                           ),
                         ),

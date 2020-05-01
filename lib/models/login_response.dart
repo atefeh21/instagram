@@ -6,6 +6,7 @@ part 'login_response.g.dart';
 class LoginResponse {
   final String title;
   final String msg;
+  @JsonKey(name: 'content')
   final String token;
   final User user;
   final String status;
