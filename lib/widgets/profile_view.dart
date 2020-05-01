@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/global/global_variable.dart';
 import 'package:instagram/style/text_style.dart';
 
 class ProfileView extends StatelessWidget {
@@ -93,12 +94,12 @@ class ProfileView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text('Your bio goes here ...'),
+                Text(authServiceInstance.logedInUser.bio),
                 SizedBox(height: 3.0),
                 Text('and here too,'),
                 SizedBox(height: 3.0),
                 GestureDetector(
-                    child: Text("www.bootem.ir",
+                    child: Text(authServiceInstance.logedInUser.website,
                         style: TextStyle(color: Colors.blue)),
                     onTap: () {
                       // do what you need to do when "Click here" gets clicked

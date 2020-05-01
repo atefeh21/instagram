@@ -1,4 +1,5 @@
 import 'package:instagram/models/post_files.dart';
+import 'package:instagram/models/user.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'post.g.dart';
 
@@ -8,20 +9,16 @@ class Post {
   final String caption;
   final int userId;
   final int active;
-  final String createdAt;
-  final String updatedAt;
   final String ago;
-  final String date;
+  final User user;
   List<PostFile> files;
   Post({
     this.id,
     this.caption,
     this.userId,
     this.active,
-    this.createdAt,
-    this.updatedAt,
     this.ago,
-    this.date,
+    this.user,
     this.files,
   });
 

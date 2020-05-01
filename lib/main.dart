@@ -5,6 +5,7 @@ import 'package:instagram/pages/home.dart';
 import 'package:instagram/pages/profile_page.dart';
 import 'package:instagram/pages/search.dart';
 import 'package:instagram/widgets/app_bar.dart';
+import 'package:instagram/widgets/loading.dart';
 import 'package:instagram/widgets/new_post.dart';
 import 'package:instagram/widgets/side_drawer.dart';
 import 'package:line_icons/line_icons.dart';
@@ -19,11 +20,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: Observer(
-          builder: (_) =>
-              authServiceInstance.token == null ? Login() : MyHomePage(),
-        ));
+      debugShowCheckedModeBanner: false,
+      home: Observer(
+        builder: (_) =>
+            authServiceInstance.token == null ? Login() : MyHomePage(),
+      ),
+    );
   }
 }
 

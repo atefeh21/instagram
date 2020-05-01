@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:instagram/models/post.dart';
 import 'package:line_icons/line_icons.dart';
 
 class PostWidget extends StatefulWidget {
+  final Post post;
+  PostWidget(this.post);
   @override
   _PostWidgetState createState() => _PostWidgetState();
 }
@@ -23,7 +26,7 @@ class _PostWidgetState extends State<PostWidget> {
               ),
             ),
             Text(
-              'username',
+              widget.post.user.name,
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
             ),
             IconButton(
@@ -93,11 +96,25 @@ class _PostWidgetState extends State<PostWidget> {
           ),
         ),
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0, vertical: 5.0),
+          padding: const EdgeInsets.symmetric(horizontal: 7.0, vertical: 5.0),
           width: 350,
           child: Text(
-              ' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.'),
+            widget.post.caption,
+            style: TextStyle(fontSize: 15),
+          ),
         ),
+        Padding(
+          padding: const EdgeInsets.only(left: 10.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                widget.post.ago,
+                style: TextStyle(color: Colors.grey, fontSize: 12),
+              ),
+            ],
+          ),
+        )
       ],
     );
   }

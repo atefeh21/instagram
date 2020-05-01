@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:instagram/global/global_variable.dart';
 
 class AppBarWidget extends StatefulWidget {
   final int selectedAppBar;
@@ -57,7 +58,7 @@ class _AppBarWidgetState extends State<AppBarWidget> {
     ),
     AppBar(
       title: Text(
-        'Username',
+        authServiceInstance.logedInUser.name,
         style: TextStyle(
           fontFamily: 'NotoSansKR',
         ),

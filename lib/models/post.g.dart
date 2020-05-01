@@ -12,10 +12,10 @@ Post _$PostFromJson(Map<String, dynamic> json) {
     caption: json['caption'] as String,
     userId: json['userId'] as int,
     active: json['active'] as int,
-    createdAt: json['createdAt'] as String,
-    updatedAt: json['updatedAt'] as String,
     ago: json['ago'] as String,
-    date: json['date'] as String,
+    user: json['user'] == null
+        ? null
+        : User.fromJson(json['user'] as Map<String, dynamic>),
     files: (json['files'] as List)
         ?.map((e) =>
             e == null ? null : PostFile.fromJson(e as Map<String, dynamic>))
@@ -28,9 +28,7 @@ Map<String, dynamic> _$PostToJson(Post instance) => <String, dynamic>{
       'caption': instance.caption,
       'userId': instance.userId,
       'active': instance.active,
-      'createdAt': instance.createdAt,
-      'updatedAt': instance.updatedAt,
       'ago': instance.ago,
-      'date': instance.date,
+      'user': instance.user,
       'files': instance.files,
     };

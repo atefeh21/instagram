@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/global/global_variable.dart';
 
 class SideDrawer extends StatelessWidget {
   @override
@@ -13,8 +14,8 @@ class SideDrawer extends StatelessWidget {
               height: 100,
               child: DrawerHeader(
                 child: Text(
-                  'Username                             ',
-                  style: TextStyle(fontSize: 20, fontFamily: 'NotoSansKR'),
+                  '${authServiceInstance.logedInUser.name}',
+                  style: TextStyle(fontSize: 16, fontFamily: 'NotoSansKR'),
                 ),
               ),
             ),
