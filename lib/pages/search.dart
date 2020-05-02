@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/models/user.dart';
+import 'package:instagram/services/search_service.dart';
 import '../widgets/user_list_widget.dart';
 
 class SearchPage extends StatefulWidget {
@@ -10,20 +12,24 @@ class _SearchPageState extends State<SearchPage> {
   TextEditingController searchController = TextEditingController();
   final TextStyle titleFontStyle =
       TextStyle(fontSize: 13.0, color: Colors.black54);
-  final List<String> users = <String>[
-    'Mahnaz Nasiri',
-    'Maryam Rasuli',
-    'Zahra Hajian',
-    'Reyhane Abedi',
-    'Farzane Heidari',
-    'Sare Bayat',
-    'Efat Adelian',
-    'Nader Dadidi',
-    'Kiana Kianfar',
-    'Qazal Kianfar',
-    'Majid Gachkar',
-    'Mahin Emadi'
-  ];
+  List<User> users = [];
+  String titleText = 'Suggested';
+  void searchLoad(String searchText) async {
+    setState(() => titleText = 'Searching ...');
+    SearchService instance = SearchService();
+    var _users = await instance.searchUser(searchText);
+    if (_users != null) {
+      setState(() {
+        users = _users;
+        titleText = 'Found ${_users.length} user(s)';
+      });
+    } else {
+      setState(() {
+        titleText = 'Found 0 users';
+        users = [];
+      });
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +69,9 @@ class _SearchPageState extends State<SearchPage> {
                 RaisedButton(
                   color: Colors.blueGrey[500],
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    searchLoad(searchController.text);
+                  },
                   child: Padding(
                     padding: const EdgeInsets.all(13.0),
                     child: Text(
@@ -85,7 +93,7 @@ class _SearchPageState extends State<SearchPage> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 10.0, vertical: 5.0),
                     child: Text(
-                      'Suggested',
+                      titleText,
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 16,

@@ -9,8 +9,10 @@ class User {
   final String email;
   final String website;
   final String bio;
+  @JsonKey(name: 'profile_photo')
   final String photo;
   final int active;
+  final bool followed;
 
   User({
     this.id,
@@ -21,6 +23,7 @@ class User {
     this.bio,
     this.photo,
     this.active,
+    this.followed,
   });
 
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);

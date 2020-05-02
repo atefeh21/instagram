@@ -22,7 +22,7 @@ abstract class _AuthService with Store {
   User logedInUser;
 
   @action
-  void logout() async {
+  Future<void> logout() async {
     token = null;
     SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setInt('userId', 0);
@@ -32,7 +32,7 @@ abstract class _AuthService with Store {
   Future<LoginResponse> login(username, password) async {
     try {
       var response = await http.post(
-        'http://kashune.com/mainweb/api/v1/login',
+        GlobalVariable.url + '/api/v1/login',
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },

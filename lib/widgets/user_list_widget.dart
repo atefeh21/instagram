@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/global/global_variable.dart';
+import 'package:instagram/models/user.dart';
 
 class UserListWidget extends StatelessWidget {
   const UserListWidget({
@@ -6,10 +8,11 @@ class UserListWidget extends StatelessWidget {
     @required this.users,
   }) : super(key: key);
 
-  final List<String> users;
+  final List<User> users;
 
   @override
   Widget build(BuildContext context) {
+    // print('PHOTO ${GlobalVariable.url + users[1].photo}');
     return Container(
       height: 400,
       child: ListView.builder(
@@ -18,21 +21,34 @@ class UserListWidget extends StatelessWidget {
         itemBuilder: (BuildContext context, int index) {
           return ListTile(
             leading: CircleAvatar(
-              backgroundImage: AssetImage('assets/user.png'),
+              backgroundImage:
+                  NetworkImage(GlobalVariable.url + users[index].photo),
               radius: 30.0,
             ),
-            title: Text('username}'),
-            subtitle: Text('name'),
-            trailing: RaisedButton(
-              // padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-              onPressed: () {},
-              child: Text(
-                'Follow',
-                style: TextStyle(fontWeight: FontWeight.bold),
-              ),
-              color: Colors.lightBlue[500],
-              textColor: Colors.white,
+            title: Text(users[index].username),
+            subtitle: Text(
+              users[index].name,
+              style: TextStyle(fontSize: 12),
             ),
+            trailing: users[index].followed == true
+                ? OutlineButton(
+                    onPressed: () {},
+                    child: Text(
+                      'UnFollow',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    color: Colors.white,
+                    textColor: Colors.blueGrey[700],
+                  )
+                : RaisedButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Follow',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    color: Colors.lightBlue[500],
+                    textColor: Colors.white,
+                  ),
           );
         },
       ),

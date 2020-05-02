@@ -1,5 +1,5 @@
 {
-  "title": "List of posts",
+  "title": "List of users",
   "msg": "",
   "status": "success",
   "code": 200,
@@ -7,1011 +7,107 @@
   "content": [
     {
       "id": 1,
-      "caption": "Dolorum eum iste earum minus ducimus. Dolores voluptatem quia id porro quia dolorum. Illum eos enim voluptatum dolorum. Magnam eius non aut vel facilis.",
-      "user_id": 1,
+      "username": "username",
+      "name": "Dr. Vicente Thompson",
+      "email": "irving60@example.com",
+      "website": "https:\/\/www.rempel.com\/quae-aut-est-quod-voluptas",
+      "bio": "Harum deleniti sed maiores sit rerum aut aliquam. Qui sed veritatis corporis eaque. Asperiores cumque quo illum ratione quia provident tempora in.",
+      "profile_photo": "public\/image\/user\/user16.png",
       "active": 1,
-      "created_at": "1399-02-11 14:26:14",
-      "updated_at": "1399-02-11 14:33:24",
-      "ago": "7 دقیقه قبل",
-      "date": "11 اردیبهشت 1399",
-      "files": [
-        {
-          "id": 1,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 2,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 3,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 13,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 14,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 15,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 25,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 26,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 27,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 37,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 38,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 39,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 49,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 50,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 51,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 61,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 62,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 63,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 73,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 74,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 75,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 85,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 86,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 87,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 97,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 98,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 99,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 109,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 110,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 111,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 1,
-          "created_at": null,
-          "updated_at": null
-        }
-      ]
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
     },
     {
       "id": 2,
-      "caption": "Voluptatibus necessitatibus voluptas aut rerum. Nemo omnis velit voluptatum corporis enim quia. Esse voluptates ducimus et amet in odit. Numquam voluptatem facilis facilis autem repudiandae illo.",
-      "user_id": 1,
+      "username": "mlittle",
+      "name": "Estrella Haag",
+      "email": "maximo.hirthe@example.net",
+      "website": "http:\/\/crist.com\/nam-dolores-mollitia-deserunt-laudantium-repellendus.html",
+      "bio": "Eos dolorem ut quia ut blanditiis tempore voluptatem. Amet necessitatibus quia et nihil sed.",
+      "profile_photo": "public\/image\/user\/user16.png",
       "active": 1,
-      "created_at": "1399-02-11 14:26:14",
-      "updated_at": "1399-02-11 14:33:24",
-      "ago": "7 دقیقه قبل",
-      "date": "11 اردیبهشت 1399",
-      "files": [
-        {
-          "id": 4,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 5,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 6,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 16,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 17,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 18,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 28,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 29,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 30,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 40,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 41,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 42,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 52,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 53,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 54,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 64,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 65,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 66,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 76,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 77,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 78,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 88,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 89,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 90,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 100,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 101,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 102,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 112,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 113,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 114,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 2,
-          "created_at": null,
-          "updated_at": null
-        }
-      ]
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
     },
     {
       "id": 3,
-      "caption": "Est occaecati consectetur officiis sed soluta provident. Qui sint nihil minima illo omnis eum quas. Unde porro ut quae ut atque ad necessitatibus. Modi officiis deserunt blanditiis.",
-      "user_id": 1,
+      "username": "dkirlin",
+      "name": "Miss Hulda Kuphal",
+      "email": "june.buckridge@example.com",
+      "website": "http:\/\/collins.com\/nam-sed-hic-aut",
+      "bio": "Eum perferendis dicta qui rerum accusantium nam voluptatem. Hic eius veniam qui dolorem beatae. Ut perferendis iure ullam officiis rerum voluptatum explicabo. Occaecati qui dolorem odio.",
+      "profile_photo": "public\/image\/user\/user16.png",
       "active": 1,
-      "created_at": "1399-02-11 14:26:14",
-      "updated_at": "1399-02-11 14:33:24",
-      "ago": "7 دقیقه قبل",
-      "date": "11 اردیبهشت 1399",
-      "files": [
-        {
-          "id": 7,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 8,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 9,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 19,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 20,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 21,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 31,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 32,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 33,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 43,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 44,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 45,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 55,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 56,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 57,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 67,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 68,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 69,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 79,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 80,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 81,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 91,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 92,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 93,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 103,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 104,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 105,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 115,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 116,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 117,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 3,
-          "created_at": null,
-          "updated_at": null
-        }
-      ]
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
     },
     {
-      "id": 4,
-      "caption": "Aspernatur vitae suscipit quas commodi. Sunt placeat iure voluptatem neque voluptatem. Aliquam placeat sed voluptatibus non similique ut possimus.",
-      "user_id": 1,
+      "id": 5,
+      "username": "rmills",
+      "name": "Shad McCullough",
+      "email": "otilia.toy@example.org",
+      "website": "https:\/\/douglas.com\/est-est-deleniti-et.html",
+      "bio": "Dolorem aliquam voluptas earum aspernatur adipisci ut. Iste minima minima itaque aut quam. Dolorem corrupti ipsam modi sequi minus.",
+      "profile_photo": "public\/image\/user\/user16.png",
       "active": 1,
-      "created_at": "1399-02-11 14:26:14",
-      "updated_at": "1399-02-11 14:33:24",
-      "ago": "7 دقیقه قبل",
-      "date": "11 اردیبهشت 1399",
-      "files": [
-        {
-          "id": 10,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 11,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 12,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 22,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 23,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 24,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 34,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 35,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 36,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 46,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 47,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 48,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 58,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 59,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 60,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 70,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 71,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 72,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 82,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 83,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 84,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 94,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 95,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 96,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 106,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 107,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 108,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 118,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 119,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        },
-        {
-          "id": 120,
-          "src": "public\/image\/post\/sea2.jpg",
-          "type": "photo",
-          "post_id": 4,
-          "created_at": null,
-          "updated_at": null
-        }
-      ]
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
+    },
+    {
+      "id": 6,
+      "username": "bwhite",
+      "name": "Miss Eloise Kreiger V",
+      "email": "bbecker@example.org",
+      "website": "http:\/\/ernser.biz\/",
+      "bio": "Quas cum dignissimos alias sunt rem. Est enim ut inventore veritatis aut perspiciatis et. Odio facere nisi officiis harum voluptatum. Voluptates ipsum voluptas adipisci in est voluptatem aut.",
+      "profile_photo": "public\/image\/user\/user16.png",
+      "active": 1,
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
+    },
+    {
+      "id": 7,
+      "username": "qlind",
+      "name": "Erika Jones",
+      "email": "ike.willms@example.net",
+      "website": "http:\/\/www.johns.com\/vero-velit-modi-modi-laudantium-hic.html",
+      "bio": "Unde iure laboriosam non inventore deleniti magni. Deleniti asperiores neque voluptas reiciendis ipsa. Culpa repellat est quo maxime ut rerum quia.",
+      "profile_photo": "public\/image\/user\/user16.png",
+      "active": 1,
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
+    },
+    {
+      "id": 8,
+      "username": "pwisoky",
+      "name": "Providenci Friesen",
+      "email": "salvatore.wiza@example.org",
+      "website": "https:\/\/www.hilpert.com\/at-perferendis-error-voluptatem-non-et-in-quo",
+      "bio": "Possimus corrupti voluptatibus architecto. Atque quae quia nihil et. Aliquid assumenda iste omnis expedita. Rem a non ut neque facilis illum. Iusto quibusdam quia provident unde eum molestiae sequi.",
+      "profile_photo": "public\/image\/user\/user16.png",
+      "active": 1,
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
+    },
+    {
+      "id": 9,
+      "username": "kreiger.silas",
+      "name": "Vena Lueilwitz",
+      "email": "vfranecki@example.org",
+      "website": "http:\/\/morissette.com\/",
+      "bio": "Aut sit quia et sint. Adipisci sunt eaque impedit omnis sapiente.",
+      "profile_photo": "public\/image\/user\/user16.png",
+      "active": 1,
+      "created_at": null,
+      "updated_at": null,
+      "followed": false
     }
   ]
 }
