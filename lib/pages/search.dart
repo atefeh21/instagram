@@ -1,110 +1,60 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/models/user.dart';
-import 'package:instagram/services/search_service.dart';
-import '../widgets/user_list_widget.dart';
+import 'package:instagram/pages/search_user.dart';
 
-class SearchPage extends StatefulWidget {
+class Search extends StatefulWidget {
   @override
-  _SearchPageState createState() => _SearchPageState();
+  _SearchState createState() => _SearchState();
 }
 
-class _SearchPageState extends State<SearchPage> {
-  TextEditingController searchController = TextEditingController();
-  final TextStyle titleFontStyle =
-      TextStyle(fontSize: 13.0, color: Colors.black54);
-  List<User> users = [];
-  String titleText = 'Suggested';
-  void searchLoad(String searchText) async {
-    setState(() => titleText = 'Searching ...');
-    SearchService instance = SearchService();
-    var _users = await instance.searchUser(searchText);
-    if (_users != null) {
-      setState(() {
-        users = _users;
-        titleText = 'Found ${_users.length} user(s)';
-      });
-    } else {
-      setState(() {
-        titleText = 'Found 0 users';
-        users = [];
-      });
-    }
+class _SearchState extends State<Search> with SingleTickerProviderStateMixin {
+  TabController _controller;
+
+  @override
+  void initState() {
+    super.initState();
+    _controller = TabController(length: 2, vsync: this);
   }
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Container(
-        color: Colors.white,
-        padding: const EdgeInsets.all(4.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Container(
-                  width: 230,
-                  child: TextFormField(
-                    controller: searchController,
-                    maxLength: 15,
-                    style: TextStyle(
-                      letterSpacing: 1,
-                      fontFamily: 'NotoSansKR',
-                    ),
-                    decoration: InputDecoration(
-                      fillColor: Colors.blueGrey[100],
-                      filled: true,
-                      hintText: 'Look for?',
-                      hintStyle: TextStyle(
-                        fontSize: 16.0,
-                        color: Colors.blueGrey[500],
-                        fontFamily: 'NotoSansKR',
-                      ),
-                      border: InputBorder.none,
-                    ),
-                  ),
-                ),
-                RaisedButton(
-                  color: Colors.blueGrey[500],
-                  textColor: Colors.white,
-                  onPressed: () {
-                    searchLoad(searchController.text);
-                  },
-                  child: Padding(
-                    padding: const EdgeInsets.all(13.0),
-                    child: Text(
-                      'Search',
-                      style: TextStyle(
-                        fontFamily: 'NotoSansKR',
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+    return Container(
+      child: Expanded(
+        child: ListView(
+          children: <Widget>[
             Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 10.0, vertical: 5.0),
-                    child: Text(
-                      titleText,
-                      style: TextStyle(
-                        color: Colors.grey,
-                        fontSize: 16,
-                        fontFamily: 'NotoSansKR',
-                      ),
-                    ),
+              color: Colors.white,
+              child: TabBar(
+                controller: _controller,
+                indicatorColor: Colors.grey,
+                labelColor: Colors.blueGrey[700],
+                unselectedLabelColor: Colors.grey,
+                tabs: [
+                  Tab(
+                    text: 'People',
                   ),
-                  UserListWidget(users: users),
+                  Tab(
+                    text: 'Tags',
+                  ),
                 ],
               ),
-            )
+            ),
+            Container(
+              height: 500,
+              child: TabBarView(
+                controller: _controller,
+                children: <Widget>[
+                  SearchPeople(),
+                  Card(
+                    child: ListTile(
+                      leading: Icon(Icons.location_on),
+                      title: Text('Latitude: 48.09342\nLongitude: 11.23403'),
+                      trailing: IconButton(
+                          icon: Icon(Icons.my_location), onPressed: () {}),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
