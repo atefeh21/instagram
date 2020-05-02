@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:instagram/global/global_variable.dart';
 import 'package:instagram/models/post.dart';
 import 'package:line_icons/line_icons.dart';
 
@@ -21,7 +22,8 @@ class _PostWidgetState extends State<PostWidget> {
             Padding(
               padding: const EdgeInsets.fromLTRB(8.0, 8.0, 8.0, 5.0),
               child: CircleAvatar(
-                backgroundImage: AssetImage('assets/user.png'),
+                backgroundImage:
+                    NetworkImage(GlobalVariable.url + widget.post.user.photo),
                 radius: 25.0,
               ),
             ),
@@ -38,8 +40,8 @@ class _PostWidgetState extends State<PostWidget> {
         ),
         Container(
           padding: EdgeInsets.only(top: 1.0),
-          child: Image.asset(
-            'assets/sea2.jpg',
+          child: Image.network(
+            GlobalVariable.url + widget.post.files[0].src,
             fit: BoxFit.cover,
           ),
         ),
