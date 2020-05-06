@@ -56,7 +56,7 @@ class _SearchPeopleState extends State<SearchPeople> {
                     decoration: InputDecoration(
                       fillColor: Colors.blueGrey[100],
                       filled: true,
-                      hintText: 'Look for?',
+                      hintText: 'Looking for who?',
                       hintStyle: TextStyle(
                         fontSize: 16.0,
                         color: Colors.blueGrey[500],

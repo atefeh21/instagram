@@ -1,113 +1,57 @@
 {
-  "title": "List of users",
+  "title": "Info of user_id :2",
   "msg": "",
   "status": "success",
   "code": 200,
   "http_code": 200,
-  "content": [
-    {
-      "id": 1,
-      "username": "username",
-      "name": "Dr. Vicente Thompson",
-      "email": "irving60@example.com",
-      "website": "https:\/\/www.rempel.com\/quae-aut-est-quod-voluptas",
-      "bio": "Harum deleniti sed maiores sit rerum aut aliquam. Qui sed veritatis corporis eaque. Asperiores cumque quo illum ratione quia provident tempora in.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 2,
-      "username": "mlittle",
-      "name": "Estrella Haag",
-      "email": "maximo.hirthe@example.net",
-      "website": "http:\/\/crist.com\/nam-dolores-mollitia-deserunt-laudantium-repellendus.html",
-      "bio": "Eos dolorem ut quia ut blanditiis tempore voluptatem. Amet necessitatibus quia et nihil sed.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 3,
-      "username": "dkirlin",
-      "name": "Miss Hulda Kuphal",
-      "email": "june.buckridge@example.com",
-      "website": "http:\/\/collins.com\/nam-sed-hic-aut",
-      "bio": "Eum perferendis dicta qui rerum accusantium nam voluptatem. Hic eius veniam qui dolorem beatae. Ut perferendis iure ullam officiis rerum voluptatum explicabo. Occaecati qui dolorem odio.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 5,
-      "username": "rmills",
-      "name": "Shad McCullough",
-      "email": "otilia.toy@example.org",
-      "website": "https:\/\/douglas.com\/est-est-deleniti-et.html",
-      "bio": "Dolorem aliquam voluptas earum aspernatur adipisci ut. Iste minima minima itaque aut quam. Dolorem corrupti ipsam modi sequi minus.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 6,
-      "username": "bwhite",
-      "name": "Miss Eloise Kreiger V",
-      "email": "bbecker@example.org",
-      "website": "http:\/\/ernser.biz\/",
-      "bio": "Quas cum dignissimos alias sunt rem. Est enim ut inventore veritatis aut perspiciatis et. Odio facere nisi officiis harum voluptatum. Voluptates ipsum voluptas adipisci in est voluptatem aut.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 7,
-      "username": "qlind",
-      "name": "Erika Jones",
-      "email": "ike.willms@example.net",
-      "website": "http:\/\/www.johns.com\/vero-velit-modi-modi-laudantium-hic.html",
-      "bio": "Unde iure laboriosam non inventore deleniti magni. Deleniti asperiores neque voluptas reiciendis ipsa. Culpa repellat est quo maxime ut rerum quia.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 8,
-      "username": "pwisoky",
-      "name": "Providenci Friesen",
-      "email": "salvatore.wiza@example.org",
-      "website": "https:\/\/www.hilpert.com\/at-perferendis-error-voluptatem-non-et-in-quo",
-      "bio": "Possimus corrupti voluptatibus architecto. Atque quae quia nihil et. Aliquid assumenda iste omnis expedita. Rem a non ut neque facilis illum. Iusto quibusdam quia provident unde eum molestiae sequi.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    },
-    {
-      "id": 9,
-      "username": "kreiger.silas",
-      "name": "Vena Lueilwitz",
-      "email": "vfranecki@example.org",
-      "website": "http:\/\/morissette.com\/",
-      "bio": "Aut sit quia et sint. Adipisci sunt eaque impedit omnis sapiente.",
-      "profile_photo": "public\/image\/user\/user16.png",
-      "active": 1,
-      "created_at": null,
-      "updated_at": null,
-      "followed": false
-    }
-  ]
+  "content": {
+    "id": 2,
+    "username": "julia",
+    "name": "Enid Dach",
+    "email": "hauck.scot@example.net",
+    "website": "http://hartmann.com/illo-nesciunt-qui-id-totam.html",
+    "bio": "Aliquam recusandae sunt quae voluptate omnis aut. Inventore consequatur eius eaque sapiente. Totam velit porro necessitatibus magni aut quia qui quod.",
+    "profile_photo": "public/image/user/user2.png",
+    "active": 1,
+    "created_at": null,
+    "updated_at": null,
+    "followed": false,
+    "posts": [
+      {
+        "id": 2,
+        "caption": "Vero iure dignissimos quia nobis iste fugit. Quibusdam rerum a nemo expedita. Perspiciatis exercitationem maxime et voluptates quam facilis. Aliquid aperiam sint magni officiis.",
+        "user_id": 2,
+        "active": 1,
+        "created_at": "2020-05-05 09:26:17",
+        "updated_at": null,
+        "ago": "14 hours from now",
+        "files": [
+          {
+            "id": 4,
+            "src": "public/image/post/img1.jpg",
+            "type": "photo",
+            "post_id": 2,
+            "created_at": null,
+            "updated_at": null
+          },
+          {
+            "id": 5,
+            "src": "public/image/post/img2.jpg",
+            "type": "photo",
+            "post_id": 2,
+            "created_at": null,
+            "updated_at": null
+          },
+          {
+            "id": 6,
+            "src": "public/image/post/img3.jpg",
+            "type": "photo",
+            "post_id": 2,
+            "created_at": null,
+            "updated_at": null
+          }
+        ]
+      }
+    ]
+  }
 }

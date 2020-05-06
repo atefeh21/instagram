@@ -18,10 +18,17 @@ class _HomePageState extends State<HomePage> {
     _isLoading = true;
     PostService instance = PostService();
     var _posts = await instance.myPosts();
-    setState(() {
-      posts = _posts;
-      _isLoading = false;
-    });
+    if (_posts != null) {
+      setState(() {
+        posts = _posts;
+        _isLoading = false;
+      });
+    } else {
+      setState(() {
+        posts = [];
+        _isLoading = false;
+      });
+    }
   }
 
   @override
@@ -32,6 +39,7 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
+    // return Container();
     return _isLoading == true
         ? Loading()
         : SingleChildScrollView(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram/pages/search_user.dart';
+import 'package:instagram/pages/search_people.dart';
+import 'package:instagram/pages/search_tags.dart';
 
 class Search extends StatefulWidget {
   @override
@@ -39,19 +40,12 @@ class _SearchState extends State<Search> with SingleTickerProviderStateMixin {
               ),
             ),
             Container(
-              height: 500,
+              height: 1000,
               child: TabBarView(
                 controller: _controller,
                 children: <Widget>[
                   SearchPeople(),
-                  Card(
-                    child: ListTile(
-                      leading: Icon(Icons.location_on),
-                      title: Text('Latitude: 48.09342\nLongitude: 11.23403'),
-                      trailing: IconButton(
-                          icon: Icon(Icons.my_location), onPressed: () {}),
-                    ),
-                  ),
+                  SearchTags(),
                 ],
               ),
             ),

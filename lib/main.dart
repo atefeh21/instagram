@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:instagram/pages/activity.dart';
 import 'package:instagram/pages/auth/login.dart';
 import 'package:instagram/pages/home.dart';
 import 'package:instagram/pages/profile_page.dart';
 import 'package:instagram/pages/search.dart';
 import 'package:instagram/widgets/app_bar.dart';
-import 'package:instagram/widgets/loading.dart';
 import 'package:instagram/widgets/new_post.dart';
 import 'package:instagram/widgets/side_drawer.dart';
 import 'package:line_icons/line_icons.dart';
+
 import './style/text_style.dart';
 import 'global/global_variable.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
 
 void main() => runApp(MyApp());
 
@@ -38,8 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
   GlobalTextStyle globalTextStyle = GlobalTextStyle();
   int _selectedIndex = 0;
   int selectedAppBar = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  // static const TextStyle optionStyle =
+  //     TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   List<Widget> _widgetOptions = <Widget>[
     HomePage(),
     Search(),

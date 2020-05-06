@@ -9,7 +9,7 @@ class SearchService {
     try {
       var response = await http.post(
         GlobalVariable.url +
-            '/api/v1/users/search?token=' +
+            '/api/v1/user/search?token=' +
             authServiceInstance.token,
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',

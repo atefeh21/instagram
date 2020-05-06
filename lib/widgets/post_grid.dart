@@ -6,8 +6,10 @@ import 'package:instagram/pages/single_post.dart';
 class PostGrid extends StatelessWidget {
   final Post post;
   PostGrid(this.post);
+
   @override
   Widget build(BuildContext context) {
+    print(post.files);
     return Container(
       padding: EdgeInsets.all(0.7),
       child: GestureDetector(

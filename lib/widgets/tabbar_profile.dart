@@ -16,6 +16,7 @@ class _TabBarProfileState extends State<TabBarProfile>
   @override
   void initState() {
     super.initState();
+    print('POSTS ${widget.posts}');
     _controller = TabController(length: 4, vsync: this);
   }
 

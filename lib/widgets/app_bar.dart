@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:instagram/global/global_variable.dart';
-import 'package:instagram/style/text_style.dart';
 import 'package:line_icons/line_icons.dart';
 
 class AppBarWidget extends StatefulWidget {

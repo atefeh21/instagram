@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/global/global_variable.dart';
+import 'package:instagram/models/user_profile.dart';
 import 'package:instagram/style/text_style.dart';
 
-class ProfileView extends StatelessWidget {
+class UserProfileView extends StatefulWidget {
+  final UserProfile user;
+  UserProfileView(this.user);
+  @override
+  _UserProfileViewState createState() => _UserProfileViewState();
+}
+
+class _UserProfileViewState extends State<UserProfileView> {
   @override
   Widget build(BuildContext context) {
     GlobalTextStyle globalTextStyle = GlobalTextStyle();
@@ -17,8 +25,8 @@ class ProfileView extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(vertical: 0, horizontal: 18.0),
                 child: CircleAvatar(
-                  backgroundImage: NetworkImage(GlobalVariable.url +
-                      authServiceInstance.logedInUser.photo),
+                  backgroundImage:
+                      NetworkImage(GlobalVariable.url + widget.user.photo),
                   radius: 50.0,
                 ),
               ),
@@ -72,16 +80,27 @@ class ProfileView extends StatelessWidget {
                   SizedBox(height: 5.0),
                   Container(
                     width: 190.0,
-                    child: RaisedButton(
-                      padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-                      onPressed: () {},
-                      child: Text(
-                        'Follow',
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      color: Colors.lightBlue[500],
-                      textColor: Colors.white,
-                    ),
+                    child: widget.user.followed == true
+                        ? OutlineButton(
+                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            onPressed: () {},
+                            child: Text(
+                              'Message',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            color: Colors.lightBlue[500],
+                            textColor: Colors.grey[700],
+                          )
+                        : RaisedButton(
+                            padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                            onPressed: () {},
+                            child: Text(
+                              'Follow',
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            ),
+                            color: Colors.lightBlue[500],
+                            textColor: Colors.white,
+                          ),
                   ),
                 ],
               ),
@@ -93,12 +112,12 @@ class ProfileView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(authServiceInstance.logedInUser.bio),
+                Text(widget.user.bio),
                 SizedBox(height: 3.0),
                 Text('and here too,'),
                 SizedBox(height: 3.0),
                 GestureDetector(
-                    child: Text(authServiceInstance.logedInUser.website,
+                    child: Text(widget.user.website,
                         style: TextStyle(color: Colors.blue)),
                     onTap: () {
                       // do what you need to do when "Click here" gets clicked
